@@ -1,0 +1,33 @@
+@mixin lora {
+    font-family: "Lora", serif;
+}
+
+
+.TamLogo {
+    max-width: 150px;
+    height: auto;
+}
+
+.fuentesNav {
+    @include lora;
+    font-size: 2.5rem;
+    padding-left: 3rem;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+> li {
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+}
+
+header {
+    @include lora;
+    font-size: 1.5rem;
+    padding: 0px 0px;
+    background-color: $color-rosa-claro;
+}
